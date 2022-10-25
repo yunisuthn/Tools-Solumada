@@ -1,0 +1,96 @@
+
+
+#preloader{
+  /* background: linear-gradient(#aae65c, #98ad44) url(../images/camel.gif) no-repeat center center; */
+  background: rgba(58, 57, 57, 0.8) url(../images/oie_transpa.png) no-repeat center center;
+  background-size: 200px 150px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100
+}
+
+
+#charg{
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  color: #aae65c;
+  font-size: 30px;
+}
+
+
+.lettre{
+  color: #484848;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-top: 150px;
+  animation: flash 1.2s linear infinite
+}
+
+@keyframes flash {
+  0%{
+      color: #fff900;
+      text-shadow: 0 0 7px #fff900;
+  }
+  90%{
+      color: #484848;
+      text-shadow: none;
+  }
+  100%{
+      color: #fff900;
+      text-shadow: 0 0 7px #fff900;
+  }
+}
+
+.lettre:nth-child(1){
+  animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+  animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+  animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+  animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+  animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+  animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+  animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(9){
+  animation-delay: 0.9s;
+}
+.lettre:nth-child(10){
+  animation-delay: 0.95s;
+}
+
+.fondu-out{
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+@media(max-width: 781px){
+  .lettre{
+    font-size: 7px;
+    letter-spacing: 0px;
+  }
+
+  #preloader{
+    background-size: 200px 150px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100
+  }
+
+} 
